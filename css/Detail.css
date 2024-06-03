@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    /* font-weight: 100;
+    font-style: normal; */
+}
+@media only screen and (max-width: 480px) {
+    /* Header */
+.header-container {
+    height: 60px;
+}
+.menu-lists {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.logo-net {
+    width: 150px;
+}
+.icons-home {
+    width: 25px;
+}
+.nav-facebook, .nav-search {
+    width: 20px;
+}
+
+/* Card */
+.card-container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.card img {
+    height: 30%;
+}
+
+/* Button */
+.btn, .btn1, .btn3 {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    height: 40px;
+}
+footer p {
+    font-size: 12px;
+}
+}
+@media only screen and (max-width: 768px) {
+/* Header */
+.header-container {
+    height: 70px;
+}
+.menu-lists {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+.logo-net {
+    width: 200px;
+}
+.icons-home {
+    width: 30px;
+}
+.nav-facebook, .nav-search {
+    width: 25px;
+}
+
+/* Card */
+.card-container {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    width: 40%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+.card img {
+    height: 35%;
+}
+
+/* Button */
+.btn, .btn1, .btn3 {
+    padding: 12px 25px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    height: 50px;
+}
+footer p {
+    font-size: 14px;
+}
+}
+@media only screen and (min-width: 1024px) {
+/* Header */
+.header-container {
+    height: 80px;
+}
+.menu-lists {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+.logo-net {
+    width: 250px;
+}
+.icons-home {
+    width: 38px;
+}
+.nav-facebook, .nav-search {
+    width: 30px;
+}
+
+/* Card */
+.card-container {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    width: 25%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+.card img {
+    height: 40%;
+}
+
+/* Button */
+.btn, .btn1, .btn3 {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    height: 60px;
+}
+footer p {
+    font-size: 16px;
+}
+}
+.header-container{
+    width: 100%;    
+    background-color: darkblue;
+}
+.menu-lists{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; 
+}
+/* ul{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; 
+} */
+a,
+li{
+    color: white;
+    text-decoration: none;
+    
+}
+.logo-net{
+    width: 250px;
+}
+.icons-home{
+    width: 38px;
+    
+}
+.nav-facebook, .nav-search{
+    width: 30px;
+}
+
+
+.link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    }
+    
+.link::before,
+.link::after {
+content: '';
+left: 0;
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: #00fffc;
+transform: scaleX(0);
+transition: transform 0.25s;
+}
+
+.link::before {
+top: -3px;
+transform-origin: left;
+}
+
+.link::after {
+bottom: -3px;
+transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after,
+.active::before,
+.active::after {
+transform: scaleX(1);
+} 
+
+.align-right {
+    float: right;
+    margin: 0; /* Optional: Add some margin to the image */
+    width: auto;
+    height: 1050px;
+}
+
+section {
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .link {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .element1,.element2,.element3,.element4-align {
+    text-align: center;
+  }
+
+
+.element2 {
+    margin: 25px; /* adds 20px space around the element */
+    text-align: center;
+}
+.element3 {
+    margin: 15px; /* adds 20px space around the element */
+    text-align: center;
+}
+.element4-align{
+    text-align: center;
+} 
+
+/* card */
+.card-container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 280px;
+    height: 400px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    margin: 0px 20px 0 60px; /* added horizontal margin */
+    flex: 1; /* added flex: 1 to make them take up equal space */
+}
+.card img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px 10px 0 0;
+}
+
+.content-container{
+    padding: 15px;
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: gainsboro;
+}
+h2{
+    height: 35px;
+    overflow: hidden;
+}
+footer{
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-top: 40px;
+}
+footer p{
+    color: #eaf0f9;
+
+}
+
+.thewriter{
+    margin-top: 10px;
+}
+.btn{
+    background-color: red; /* Green background color */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding for better user experience */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No text decoration */
+    display: inline-block; /* Inline block element */
+    font-size: 16px; /* Font size */
+    margin: 15px 2px; /* Margins for better spacing */
+    border-radius: 12px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.btn1 {
+    background-color: #0e0d0d; /* Green background color */
+    border: 5; /* No border */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding for better user experience */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No text decoration */
+    display: inline-block; /* Inline block element */
+    font-size: 16px; /* Font size */
+    margin: 4px 35px; /* Margins for better spacing */
+    border-radius: 12px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.btn1, .btn2{
+    margin-bottom: 20px;
+}
+.btn:hover {
+    background-color: #9d0101; /* Darker green background color on hover */
+}
+.btn3:hover {
+    background-color: #9d0101; /* Darker green background color on hover */
+}
+.btn3{
+    background-color: red; /* Green background color */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 10px 40px; /* Padding for better user experience */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No text decoration */
+    display: inline-block; /* Inline block element */
+    font-size: 16px; /* Font size */
+    margin: 30px 15px; /* Margins for better spacing */
+    border-radius: 12px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+

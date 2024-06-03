@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤜Home Page🤛</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body style="background-color: black;">
+    <header class="header-container">
+        <nav class="menu-list">
+            <ul class="menu-lists">
+                <img src="../image/logo.png" alt="Netx" class="logo-net">
+                <li><a href="index.html" class="link"><h2>Home</h2></a></li>
+                <li><a href="./pages/Detail1.html" class="link"><h2>Details</h2></a></li>
+                <li><a href="./pages/about.html"class="link"><h2>About us</h2></a></li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACsElEQVR4nO2ZzUuUURSHXzdlNAURoW41ym2boIVfiX9BSy2iQAz8H5JaqO3dZxBESx382NaiD21Z1qZNu8yVUc0YPXHxQLfT9TYznjvzTr0PDAwD7/mdw33PPR+TZQUF+QPoAW4CD4BXwCegKp9tYBNYBG4A3VneAIaBMvCd2tkDloHBPARwFljj8KwAfa0K4hrwGTt2gYlmB3En4tAbYBYYBc4Dx+XTL7/NAVuR52eaFcTdAxx4AYzUYecS8LQlwbD/OmkqwCTQ0YC9DmBKbGjGUya2zgl3vQ4Y2B4EdgI502vj/e9i+naqWATh2R+SeuNTtrLv1wnNpKnIvs6tgM6ApYArdj7PG8mJGnPmpdJasmw7XBX2GTIxHtYbUVp7QJeFYdc7+bw28Tiu+VZpXrcw6hpAn1kTb+Oa80rzvoVR18X6jJp4G9ccU5obFkZdrfA5Z+JtXNO1Nj4fLYzqqlsy8TauWVKa31IEcsLE27jmSaW5+6+8Wu8tjG7mINmfWRh1M7bPnIm3cc17SnMhRUHcMvE2rvlOaV6xMNodaFGGTTwO67kp0qcCnLYy7rYdehpM1TTqnFy0FHCDj2bKTOCXznRA54K1iFvZ+FQtd1LS9erB6qGVfV+oT8ZPnx2Lll4GNz3qus3kGRvv/xScCBx9VSa7RpcP04GTcDwBjiQJRMRnCLMBXK7zdtKJrVkBOlsRDDIUzUt17pcGsCTfx6TY6ToRYyn1yYwHciYVy8DRlMH0BhYT9fIDeAystzQYh1vZyCugO4AYX4FHwEWx0Qms/uWZcvJgxJkutyhwM7Yk/7a0GF+AD7LqWQCuAqcCz+cnmMPiEjvQEmlWk95mTQ5mrQim2fAfnsw6cCzLO9R2mzX3/8dEJ3M7aycIB9NeQRwQTHsGoXImzZ+lBQVZlJ/po/gO7uhxQgAAAABJRU5ErkJggg==" class="nav-search">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACi0lEQVR4nO2ZsU8UURCHV0ULlBhjZaGSiKU29CRqAMXCoKKJVnbGf8BGE4IJEkMjhTY2xkJRG9QzRG3sCI0XowF7O0EQRcDiPjPhkWyx9+693dndd8n9kpdcsTu/+W53Z+fNRlFLLYUtYA8wAIwBr4F54Cfwzyz5PQe8Au4CZ+ScKAQB20xCz4F1/LUGTAKnJVZUEsQQ8Bk9VYHzRQIcBT6Qn94BXXlDXACWyV8rwJW8noVhiteY2rNjIB5Snh6owJhSWbbuZIW4TDi6mqU6/VZKQt4Xj0zJlrj7gb3APqATOAaMN4jxCziSBkSrxL4HDjj4XXOINe0LcVEJogK0OXq6gIgGfaqUxht7QW4hjz/PFeSTUxUzvZOGRl0hPEFE/S4BpQHU0HGLRzcwYby21qxH7KeNIDpSdrFJFWaHBWIjY/y/QLsNRPYTGqpaPB4refTZQKS30dBHi8f33J9BNnd2GnprqYiyW9TQlA3km5JJpU78Xehpzgay2EQgP2wgWatJkSDr2iCDpvmLr7rTkYRjt9Y9T98NG8hSCpDeSEHAM0/fBVuw+RJBpIfy0VdbsEoZIMB2YFWz/I6WBHJYdfsLnE0R8Ibpn+Kry/JC7E5Y11P49ttA2oE/hF9+V4HdjS7ziyYAmbRCGLO+JgA55QIi9/GXgEGqDSFihucCBhlwBlEYB+UFMu0FYUw7zVQ8FJBl4JA3iDGWhrAWAEgNuJQKImY+EgDIcCaIWAL3SwQZV4GIJXHT4zbTAKmpXYk6n96WCgBZdJ7xZuxU3+QIMgUczBUioVOeVQSZkblzYQAJyfUAT8yY1BdkxUwee6JQxGaSJ4FbUhjqHLMTeAncBk7IOcVn2lJLkY/+A1tlbk1c+pFNAAAAAElFTkSuQmCC" class="nav-facebook">
+                <a href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/0lEQVR4nO2YXYiNQRzGx1qsj2gRQsgWNiVJPpNc2BttaUsoKTd7u+3V3rrcW5cuuFFI4YYLLqQQkqTkowiRj5aNfGftbxu92WPmP3vmvLt73plz5lfn6n1m/jPPe+Z9ZkapRCJRBMAEoBc4AjSoegKYApxmmPPANFUPALOBa9jcAuapWgZYDjzGzTNgpapFgI3Ae8rzEdimaglgN/ANf34Ce0forywqFIAu4I8wxt/Zs07gl/B8EDgcrQEMx5zEB2BHiXYr8M6htWIyeAOwY66U+8Ayoc1i4I6jzX8xGbQBuGNOcwaYPkLbJuCEo+2/mAzWANwxN5gthwbPpdPj+G78jckgDQA2A33CWD4D7Y63fSz7NQnP27O2Jn3BGYA75p4CqwX9EuB2ie4e0CLoVgCPfCZcmAG4Y+4S0CzodwH9gl6/7Q5B3wxcDs4ARo65o8AkQz9R57rDrNJvhY69RqFtbzAG4I45vYM7JOjnZv8IX64CC4R+9gPfCzUAd8y9ATYJ+vXACyrnNbBF6G8d8LIQA3DH3F39YRP0rm2uL3q73CP0uxC4WVUDcJ/mTgJTDe0M4BRjh94JzhKW4fGqGAB0CGtvAOgWtK3AQ8Ye3WerUK87G4tJx3jGXD+w07Ef+MT48QXYJ9RtE6LVeZocbcw9AVYZ2sZKY2qU6JidbIyhBXggaCu/dMUdcxeFtbgIuEH10SfHpcK355yg9b90RY458TADbAfeUhz6XNDmeZgqf+mKHHM/gANCka4spopmINthmi9nD/DV+9IVOeZe6Y2MoZsJnCU8LphnD2AN8LzspSvyae46MN/Qrc1OeKGid4gbjDHPAa44L12RY076yh6s8Ga3KPSS7RRSSqdB/pgkMrwn5guR4T0xX4gM74n5QmR4T8wXIsN7Yr4QGd4T84XICMYAFWldi2RATlSkdS2SATlRkda1SAbkREVa1yIZkBMVaV2LZEBOVKR1LZIBOVGR1rVIBuRERVrXIhmQExVpXYu6NyCRSCQSiYSqNYYAFpkhHr5MxUIAAAAASUVORK5CYII=" class="icons-home"></a>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <img class="big-img-body" src="./image/home1.png" alt="big-img-body" >
+        <section >
+            <div class="menu-list">
+                <ul class="menu-lists">
+                    <li class="trend">
+                        <img class="space-trend1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACX0lEQVR4nO3ZuYsVSRwA4PLEA7wCUVcDEXWMRMFEURAXs0UwGRFMFHTcQDFYWBUv/AMEQTAy2TVxFDYwE0EDWXbQzF3UQEQ8wGvxxl30k8YeKHrezJsDmdfzfh908LqOrqqu/nVXvZRCCCGEEEIIIYQQWghmYPYQj/Gp7jARVw3PU3SkOsNiI/NrqjOMwzm8wKsmx5sGA3AktQOMxx/tPACn+nkExv4AoKtB8Ot1NI1l2Iz/sw5fwom2GACswL9ZZ29hOo639ABgXRmw9o6gjrm4n3X0IeaXafkAHEutBB2Vu9Y1jDqm4EZWx1uszNJbcwZgDu5VAtZ/2DTE74LfsvKfsaWSp/VmACYN8En7EssGWU/eucKBJnlaZgDOVu7az3iSnbtTLGCa1LEdX7IyZ/vJlw/A8TTasK9y1w6W51fjfXb+Oib3U8dafMzyXhsgb+vMAH3f078Xz3GW3tnsrpYLomdZnn8wa4Br7sny7k6jBcsrEf/PIoI3yHesMkP2Z2kz8XeW9hxLmlx3Mg6VR8NZ8t35tiFxN2v4Y/wwQGQ/X4kRP2ECLlfeGBtTTTYxrmQNf4dVTcpMRU9W5jUuZr+Lx2RHqgOcqTS8c5Dl5pVfdI2cTHWAXZWGHx5i+VXljMl112J/DxvwKWv4hTziD6GerWUcKNzEtNTqsLT8ouv1V/Fcj6C+H/FL8RZINdmyvj2YiD/m6Puq+oA1qV3gdCXib0vtAjvbbgOyF9ZXIn73cCJ+LWFR+UdFr56RRPy6b0M/woLUTrCwXKE9KNb0o92eEEIIIYQQQgghhJCG5ysVXWBCVpOdWQAAAABJRU5ErkJggg==">
+                        <h3>Trends Now</h3>
+                    </li>
+                    <li class="trend">
+                        <img class="space-trend" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAES0lEQVR4nO2ba6hVVRCA1y2DfBb+KFKsLCHUNMNeCj2giJDoRpEmSS8sSKwkg8BS9FdUYqTlD0mRsJDeQVLqj5RIKv9ZVCppXW/4wwp7aXXVLwbnyLg53bvXOrP32ed4P7hw7jp7Zs3M2WvtNbPWDqGffpoGcDkwKZyKAA8BR4FjwOJwKgHMVcctq4DTQ7sDzKvjfI3X2zoIwJ29OF/jNaAjtBvAJOBP8rEwtBPAOcCP5EfukumhXQDeJp7DwDWh1QHuI50u4KzQqgCjgIM0xurQqgDr8WFaaDWAqTkeeXnpBs4OrQLQAXyJL8tCqwDchj//ABeHVgD/X7/GulB1gJspjqOVT5+BDymW9aGqAOcDRwoOgOgfXQVnO4G7Mm1LKIelVUhra9xu2r+lHGR1ObhZzg8C9hpjtmv7BMplVrMC8GwdY26Vul7JAdjYDOcv0QVJlu+Ab0oOgEyGI8oOwAaqxaNlOn8F1WNTxsYRwExgSBEBeIfqIcNxmNo33EzOvktmYCTQQzXp1OzzA9PW4zo/AM8UYPjfwALgaf2cyjLgiTrtizwDsANf/gBuNPpv0rYUfgL+rdO+w8v5Mfjye71qr1aQUoPwf1zgEYDZjgb9BVybCe4Y8/8NwCHH/h7wCMBqx1y+0+gdrWXvLpvdAXfotR685BGAz5yMmZdJm20+sUfazPfznfr8xCMA+x0MecPoGwJ8Xeear+wCxqmkvssjAIcaNGK3WazI8/rNXq59r7YzrIHa2WDfv3oE4EgDBshYvsrokmd+Xyxw3Fvo8QjAbx7bWsD1OSc3ueY6I7e2gf4PegSgO7FzCdy5qmOgDoW8yK0/UGXP07VDCl0eAdiW2PmLRocseWN5ysgvT7ThU48ArEnsfLzKDwN+SZD/GRjaYLntVY8APJbQ8RdOK8kHjZ7tCfJzPQIwIaHj54z8RtL5yOh5IUF+nEcAOjTjimG2wyQq7DN6Ho6VdTttBiyN7PweIytnfVI5bPTMipR93sX5xGEw38jGnA7L8oPR82SEnCyeLg2eAB9HGLDCyPW29M29EQqsjJDb4Oq8IHl8hAHfZ9LbVGz6bLPHvpgSioC4X/PKBo/LbDOJ0dUpmWcRARgZkRuc2LoCLtKFTV4OZIokmyM2TYvdLQLujnBkhpEbL0Mjh8xu+/zWjY68nLRdX2QQXomoAU42coPlILSWwbJ0afl9kLl+surIw/JSnBfkTD/wfsRteUsw6LwwVtr1b6z9Xq+ZFnHK9N3S3zPgeIqbd7NUiior5NR4zpPlL0cUYsSGM8vxOgNwhr7gkBfJ69fJWNU7QMpeQ/XzdH1jJGZvQIolA0KzAe51ruf3hWylPR4q+EbI5yU4L+uDy0IVAU6THF7r/N7II/R+6SNUHWCAZm9bG6zqSoF0i+pq/lhPAbgQmKOvzXTnzOPfAh5x2dysGhyf9SfK9rgebujUzxNrNcB++gml8R9UP4DafUSYGwAAAABJRU5ErkJggg==">
+                        <h3>Populate</h3>
+                    </li>
+                    <li class="trend">
+                        <img class="space-trend" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADw0lEQVR4nO2aSUhWURTHvyZKC6LBQkoJyqZFrZJyiOZoEGzXSiJsFdSiyMBQCAuhWmRFrYqsTdLK5pGMooEWgQVNZLXRqIwSwtT6xdHz4PJ6ft43fD4L//Dx3r3v3nPv/91z7xnel0gMYhCDCA1gNrAbuA48B74CncAn4CFQA6wChvqQORxYCxwFHqmsTpX9XMcqA2ZFQWAl8AR7vAW2AMP6ILAV+OBD7mNgeRACk4ErBIe84ekecucAT0PIvQRk2JKYD7wnPERFCg25onptEchtAubZkPhOdPgB5KuK/oxQ7vdeyQCTgHdEjy/AtxTIbfJUM9W/fw0X3CSWhRB2RVfzKvFgiUlETpmg2KQySokHDxwSOSEFzVU5ucSHmTKBXSEEtDnGD0gDuogHOxIhdbvBtddeEA8uJ9SvCYqDLiLniAeNCT3ng2KjEpii13LiwRcZvD2EgBkOAb0WEQ86ZPDmgJ1lJYcA6cAzJZJNPPgsgzdaNJTTaLH+fmnddZ18vj5PV2KtHv3rgQliiUkNXslELlo0PG1s6Ntat0/L27W8QMsNHv0L9Jm8iFTgggjf00cjeds5BpESrd+g5bNaLtWyRIsmXspK6TNZsTcpIFItwlfYrIacTDqR0epGT3XZjppeXJUyrXcMZ4XFxG5IYCZjiI2waL86aXzishG1ohp6v1+vY409020cRcWMASQGz9T6Kr1O0z5yWuZZjJtlEfOk2ZIoVBU7qeUxHl5zq3GKOa5KvRHiyuSnGftsr+XYWX0QOWM2XogdRKVGG/3cflq2S92KtXxAyxVaXgKMUuJ3kqhWlkXuoFtLTDLXLMmUGH3Ou54VGa5KCzBCsybNRpale+Nru82Ewz2vJcyz7HzL6CPhpolyw1U5oPfFrjbOPssQQxaCxO+/VsOY2CkLAaLrSyXP5PGsTuWsl32h92IMTYhRHO+xmn5Rm2xjjfWZOHPjhcoZqddMPbmiRnOf+S1900EDpG5XxZAlKc+o0SWnZVISxgS2hRgoV2UMUaseNXZakTDIHAk4kOOqFBA9jvsioRMZptbcL+Tcn2jpjPrBCT/ZfjcZUY9jxI/jpv0JQ+ZQjCSqQ5NwERKvtqMfCbSL5Y+MgIuMOIkf+4FEi41nHJaMxCV3U0iiwYl1Ug51BKsiziyKrMpkn+1SSWgR8DoCEk1OXB8bNOd7WL3RIKgDxiUGCoA1PnNk0nZdYiCCnhjDJil+04nlByzocW0qezkIOjU8js7ApRr6JddMkH+2dr8HGjSBIH/xuO/1B4JB/M/4A2oom0RbdHrsAAAAAElFTkSuQmCC">
+                        <h3>Quality</h3>
+                    </li>
+                    <li class="trend">
+                        <h3>Download Now</h3>
+                    </li>    
+                </ul>
+            </div>
+            <hr class="hr-home">
+             <!-- card -->
+            
+            <div class="card-container" >
+                <a href="./pages/Detail1.html">
+                    <div class="card" style="background-color: gainsboro;">
+                        <img src="./image/captain.jpg" alt="">
+                        <div class="content-container">
+                            <div class="label">
+                                <small>All MOVIE </small>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <h2>CAPTAIN AMERICA</h2>
+                            <div>He is the face of all that America stands for from his star spangled suit to his values and heroism. </div>
+                            <p class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/Detail4.html">
+                    <div class="card" style="background-color: gainsboro;">
+                        <img src="./image/doctor.jpg" alt="">
+                        <div class="content-container">
+                            <div class="label">
+                                <small>All MOVIE </small>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <h2>DOCTOR STRANGE</h2>
+                            <div>Doctor Strange joins the Avengers from the Dark Dimension during Avengers 5.Doctor Strange 3.</div>
+                            <p class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/Detail2.html">
+                    <div class="card" style="background-color: gainsboro;">
+                        <img src="./image/iron.jpg" alt="">
+                        <div class="content-container">
+                            <div class="label">
+                                <small>All MOVIE </small>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <h2>THE IRONMAN </h2>
+                            <div>An Ironman Triathlon is one of a series of long-distance triathlon races organized by the (WTC)</div>
+                            <p class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/Detail3.html">
+                    <div class="card" style="background-color: gainsboro;">
+                        <img src="./image/spider.jpg" alt="">
+                        <div class="content-container">
+                            <div class="label">
+                                <small>All MOVIE </small>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <h2>THE SPIDERMAN</h2>
+                            <div>Peter Parker originally used his powers for his own personal gain, but after his Uncle Ben was killed.</div>
+                            <p class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p> Hello, welcome; Welcome, good morning; Hello, good afternoon, welcome..</p>
+    </footer>
+</body>
+</html>

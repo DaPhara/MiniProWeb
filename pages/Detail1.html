@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤜Detail1🤛</title>
+    <link rel="stylesheet" href="../css/Detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body style="background-color: black;">
+    <header class="header-container">
+        <nav class="menu-list">
+            <ul class="menu-lists">
+                <img src="../image/logo.png" alt="Netx" class="logo-net">
+                <li><a href="../index.html" class="link"><h2>Home</h2></a></li>
+                <li><a href="Detail2.html" class="link"><h2>Details</h2></a></li>
+                <li><a href="about.html"class="link"><h2>About us</h2></a></li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACsElEQVR4nO2ZzUuUURSHXzdlNAURoW41ym2boIVfiX9BSy2iQAz8H5JaqO3dZxBESx382NaiD21Z1qZNu8yVUc0YPXHxQLfT9TYznjvzTr0PDAwD7/mdw33PPR+TZQUF+QPoAW4CD4BXwCegKp9tYBNYBG4A3VneAIaBMvCd2tkDloHBPARwFljj8KwAfa0K4hrwGTt2gYlmB3En4tAbYBYYBc4Dx+XTL7/NAVuR52eaFcTdAxx4AYzUYecS8LQlwbD/OmkqwCTQ0YC9DmBKbGjGUya2zgl3vQ4Y2B4EdgI502vj/e9i+naqWATh2R+SeuNTtrLv1wnNpKnIvs6tgM6ApYArdj7PG8mJGnPmpdJasmw7XBX2GTIxHtYbUVp7QJeFYdc7+bw28Tiu+VZpXrcw6hpAn1kTb+Oa80rzvoVR18X6jJp4G9ccU5obFkZdrfA5Z+JtXNO1Nj4fLYzqqlsy8TauWVKa31IEcsLE27jmSaW5+6+8Wu8tjG7mINmfWRh1M7bPnIm3cc17SnMhRUHcMvE2rvlOaV6xMNodaFGGTTwO67kp0qcCnLYy7rYdehpM1TTqnFy0FHCDj2bKTOCXznRA54K1iFvZ+FQtd1LS9erB6qGVfV+oT8ZPnx2Lll4GNz3qus3kGRvv/xScCBx9VSa7RpcP04GTcDwBjiQJRMRnCLMBXK7zdtKJrVkBOlsRDDIUzUt17pcGsCTfx6TY6ToRYyn1yYwHciYVy8DRlMH0BhYT9fIDeAystzQYh1vZyCugO4AYX4FHwEWx0Qms/uWZcvJgxJkutyhwM7Yk/7a0GF+AD7LqWQCuAqcCz+cnmMPiEjvQEmlWk95mTQ5mrQim2fAfnsw6cCzLO9R2mzX3/8dEJ3M7aycIB9NeQRwQTHsGoXImzZ+lBQVZlJ/po/gO7uhxQgAAAABJRU5ErkJggg==" class="nav-search">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACi0lEQVR4nO2ZsU8UURCHV0ULlBhjZaGSiKU29CRqAMXCoKKJVnbGf8BGE4IJEkMjhTY2xkJRG9QzRG3sCI0XowF7O0EQRcDiPjPhkWyx9+693dndd8n9kpdcsTu/+W53Z+fNRlFLLYUtYA8wAIwBr4F54Cfwzyz5PQe8Au4CZ+ScKAQB20xCz4F1/LUGTAKnJVZUEsQQ8Bk9VYHzRQIcBT6Qn94BXXlDXACWyV8rwJW8noVhiteY2rNjIB5Snh6owJhSWbbuZIW4TDi6mqU6/VZKQt4Xj0zJlrj7gb3APqATOAaMN4jxCziSBkSrxL4HDjj4XXOINe0LcVEJogK0OXq6gIgGfaqUxht7QW4hjz/PFeSTUxUzvZOGRl0hPEFE/S4BpQHU0HGLRzcwYby21qxH7KeNIDpSdrFJFWaHBWIjY/y/QLsNRPYTGqpaPB4refTZQKS30dBHi8f33J9BNnd2GnprqYiyW9TQlA3km5JJpU78Xehpzgay2EQgP2wgWatJkSDr2iCDpvmLr7rTkYRjt9Y9T98NG8hSCpDeSEHAM0/fBVuw+RJBpIfy0VdbsEoZIMB2YFWz/I6WBHJYdfsLnE0R8Ibpn+Kry/JC7E5Y11P49ttA2oE/hF9+V4HdjS7ziyYAmbRCGLO+JgA55QIi9/GXgEGqDSFihucCBhlwBlEYB+UFMu0FYUw7zVQ8FJBl4JA3iDGWhrAWAEgNuJQKImY+EgDIcCaIWAL3SwQZV4GIJXHT4zbTAKmpXYk6n96WCgBZdJ7xZuxU3+QIMgUczBUioVOeVQSZkblzYQAJyfUAT8yY1BdkxUwee6JQxGaSJ4FbUhjqHLMTeAncBk7IOcVn2lJLkY/+A1tlbk1c+pFNAAAAAElFTkSuQmCC" class="nav-facebook">
+                <a href="../index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/0lEQVR4nO2YXYiNQRzGx1qsj2gRQsgWNiVJPpNc2BttaUsoKTd7u+3V3rrcW5cuuFFI4YYLLqQQkqTkowiRj5aNfGftbxu92WPmP3vmvLt73plz5lfn6n1m/jPPe+Z9ZkapRCJRBMAEoBc4AjSoegKYApxmmPPANFUPALOBa9jcAuapWgZYDjzGzTNgpapFgI3Ae8rzEdimaglgN/ANf34Ce0forywqFIAu4I8wxt/Zs07gl/B8EDgcrQEMx5zEB2BHiXYr8M6htWIyeAOwY66U+8Ayoc1i4I6jzX8xGbQBuGNOcwaYPkLbJuCEo+2/mAzWANwxN5gthwbPpdPj+G78jckgDQA2A33CWD4D7Y63fSz7NQnP27O2Jn3BGYA75p4CqwX9EuB2ie4e0CLoVgCPfCZcmAG4Y+4S0CzodwH9gl6/7Q5B3wxcDs4ARo65o8AkQz9R57rDrNJvhY69RqFtbzAG4I45vYM7JOjnZv8IX64CC4R+9gPfCzUAd8y9ATYJ+vXACyrnNbBF6G8d8LIQA3DH3F39YRP0rm2uL3q73CP0uxC4WVUDcJ/mTgJTDe0M4BRjh94JzhKW4fGqGAB0CGtvAOgWtK3AQ8Ye3WerUK87G4tJx3jGXD+w07Ef+MT48QXYJ9RtE6LVeZocbcw9AVYZ2sZKY2qU6JidbIyhBXggaCu/dMUdcxeFtbgIuEH10SfHpcK355yg9b90RY458TADbAfeUhz6XNDmeZgqf+mKHHM/gANCka4spopmINthmi9nD/DV+9IVOeZe6Y2MoZsJnCU8LphnD2AN8LzspSvyae46MN/Qrc1OeKGid4gbjDHPAa44L12RY076yh6s8Ga3KPSS7RRSSqdB/pgkMrwn5guR4T0xX4gM74n5QmR4T8wXIsN7Yr4QGd4T84XICMYAFWldi2RATlSkdS2SATlRkda1SAbkREVa1yIZkBMVaV2LZEBOVKR1LZIBOVGR1rVIBuRERVrXIhmQExVpXYu6NyCRSCQSiYSqNYYAFpkhHr5MxUIAAAAASUVORK5CYII=" class="icons-home"></a>                
+            </ul>
+        </nav>
+    </header>
+    <img src="../image/capde.jpg" alt="NoPage" class="align-right">
+    <main>
+        
+        <section>
+            <div class="link section">
+                <h2 class="element1"> Trailers  |  Technology  |  Science    </h2>
+                <h1 class="element2">THE CAPTAIN AMERICA</h1>
+                <h2 class="element4-align">2011 | Director: Joe Johnston | Production: Marvel   </h2>
+                <p class="element3">Falcon and the Winter Soldier head writer Malcolm Spellman <br>
+                                    and series writer Dalan Musson were confirmed to be writing <br>
+                                    a fourth Captain America film in April 2021, series <br>
+                                     writer Dalan Musson were confirmed to be writing. 
+                                </p>
+                <button class="btn">WATCH NOW</button>
+                <button class="btn1">ALL CATEGORY</button>
+                <h1 class="thewriter">THE WRITER | AUTHOR   </h1>
+                <div class="card-container" >
+                    <div class="card" style="background-color: #4e545c;">
+                        <img src="../image/dire-cap.jpg" alt="">
+                        <div class="content-container">
+                            <h1>Joe Johnston</h1>
+                        </div>                 
+                    </div>
+                    <div class="card" style="background-color: #4e545c;">
+                        <img src="../image/capp.jpg" alt="">
+                        <div class="content-container">
+                            
+                            <h1>Steve Rogers</h1>
+                            
+                        </div>
+                    </div>
+                </div>
+                <a href="Detail1.html"><button class="btn3">Back</button></a> 
+                <a href="Detail2.html"><button class="btn3">Next</button></a>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
